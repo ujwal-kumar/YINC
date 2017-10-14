@@ -1,1 +1,1 @@
-# YINC
+# automation-test
