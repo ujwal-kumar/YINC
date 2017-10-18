@@ -16,7 +16,8 @@ public class TestRun {
 
 	@BeforeTest
 	public void executing() throws InterruptedException, IOException {
-		driver = Dlib.openBrowser("chrome");
+//		driver = Dlib.openBrowser("chrome");
+		driver = Dlib.openBrowser("FireFox");
 		lib = new LibraryForGenericFunction(driver);
 		// Application link will be opened
 		driver.get("http://13.92.196.16/YouthInc");
