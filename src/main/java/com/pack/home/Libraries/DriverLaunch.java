@@ -45,8 +45,7 @@ public class DriverLaunch {
 		} else if (isMac()) {
 			System.setProperty("webdriver.chrome.driver","" + currentDir + "" + "/src/main/java/com/pack/home/AllDrivers/chromedriver_mac64/chromedriver");
 		} else if (isUnix()) {
-//			System.setProperty("webdriver.chrome.driver","" + currentDir + "" + "/src/main/java/com/pack/home/AllDrivers/chromedriver_linux64/chromedriver");
-			System.setProperty("webdriver.chrome.driver","usr/bin/chromedriver");
+			System.setProperty("webdriver.chrome.driver","" + currentDir + "" + "/src/main/java/com/pack/home/AllDrivers/chromedriver_linux64/chromedriver");	
 		} else {
 
 		}
