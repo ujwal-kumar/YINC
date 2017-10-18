@@ -17,7 +17,7 @@ public class DriverLaunch {
 
 			if (browser.equalsIgnoreCase("Firefox")) {
 				System.out.println("Selected browser is Firefox");
-				System.setProperty("webdriver.gecko.driver","/usr/bin/geckodriver");
+//				System.setProperty("webdriver.gecko.driver","/usr/bin/geckodriver");
 				driver = new FirefoxDriver();
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				System.out.println("Selected browser is Chrome");
@@ -46,8 +46,8 @@ public class DriverLaunch {
 		} else if (isMac()) {
 			System.setProperty("webdriver.chrome.driver","" + currentDir + "" + "/src/main/java/com/pack/home/AllDrivers/chromedriver_mac64/chromedriver");
 		} else if (isUnix()) {
-//			System.setProperty("webdriver.chrome.driver","" + currentDir + "" + "/src/main/java/com/pack/home/AllDrivers/chromedriver_linux64/chromedriver");
-			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			System.setProperty("webdriver.chrome.driver","" + currentDir + "" + "/src/main/java/com/pack/home/AllDrivers/chromedriver_linux64/chromedriver");
+//			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		} else {
 
 		}
