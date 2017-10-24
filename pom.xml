@@ -32,8 +32,7 @@
 		<artifactId>extentreports</artifactId>
 		<version>2.41.2</version>
 	</dependency>
-  </dependencies>
-  
+  </dependencies>  
   <repositories>
   	<repository>
   		<id>Maven-Central</id>
@@ -45,8 +44,7 @@
   		<name>Maven Selenium HQ</name>
   		<url>http://repo1.maven.org/maven2/org/seleniumhq/selenium/</url>
   	</repository>
-  </repositories>
-  
+  </repositories>  
   <build>
   	<plugins>
   		<plugin>
@@ -62,4 +60,8 @@
   		</plugin>
   	</plugins>
   </build>
+  <properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 </project>
