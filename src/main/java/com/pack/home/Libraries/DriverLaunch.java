@@ -25,7 +25,7 @@ public class DriverLaunch {
 				detectOS();
 				ChromeOptions chromeoptions=new ChromeOptions();
 				chromeoptions.addArguments("--headless", "--diable-gpu", "--dump-dom");
-				driver = new ChromeDriver();
+				driver = new ChromeDriver(chromeoptions);
 			} else if (browser.equalsIgnoreCase("IE")) {
 				System.out.println("Selected browser is Internet Explorer");
 				System.setProperty("webdriver.ie.driver",
