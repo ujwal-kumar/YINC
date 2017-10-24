@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 
 public class DriverLaunch {
 
@@ -21,6 +23,8 @@ public class DriverLaunch {
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				System.out.println("Selected browser is Chrome");
 				detectOS();
+				ChromeOptions chromeoptions=new ChromeOptions();
+				chromeoptions.addArguments("--headless", "--diable-gpu", "--dump-dom");
 				driver = new ChromeDriver();
 			} else if (browser.equalsIgnoreCase("IE")) {
 				System.out.println("Selected browser is Internet Explorer");
