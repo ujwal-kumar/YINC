@@ -19,7 +19,7 @@ public class TestRun {
 		driver = Dlib.openBrowser("chrome");
 		lib = new LibraryForGenericFunction(driver);
 		// Application link will be opened
-		driver.get("http://13.90.84.10/YouthInc");
+		driver.get("http://192.168.1.39/YouthInc");
 	}
 	
 	
