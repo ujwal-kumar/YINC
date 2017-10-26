@@ -38,7 +38,7 @@ public class DriverLaunch {
 		}
 
 		// Maximize the window
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 
 		return driver;
 	}
