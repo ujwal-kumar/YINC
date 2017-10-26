@@ -23,9 +23,9 @@ public class DriverLaunch {
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				System.out.println("Selected browser is Chrome");
 				detectOS();
-				ChromeOptions chromeoptions=new ChromeOptions();
-				chromeoptions.addArguments("--headless", "--diable-gpu", "--dump-dom");
-				driver = new ChromeDriver(chromeoptions);
+				//ChromeOptions chromeoptions=new ChromeOptions();
+				//chromeoptions.addArguments("--headless", "--diable-gpu", "--dump-dom");
+				driver = new ChromeDriver();
 			} else if (browser.equalsIgnoreCase("IE")) {
 				System.out.println("Selected browser is Internet Explorer");
 				System.setProperty("webdriver.ie.driver",
@@ -38,7 +38,7 @@ public class DriverLaunch {
 		}
 
 		// Maximize the window
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 
 		return driver;
 	}
