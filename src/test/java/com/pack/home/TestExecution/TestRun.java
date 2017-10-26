@@ -26,7 +26,7 @@ public class TestRun {
     public void login() throws InterruptedException, IOException {
         lib.jsSendKeysForID("loginform-email", "loginform-email", "login", "ID");
         lib.jsSendKeysForID("loginform-password", "loginform-password", "login", "ID");
-        Assert.assertTrue(lib.waitAndClickForID("login", "login", "ID"));
+        Assert.assertTrue(lib.waitAndClickForID("login", "login", "name"));
         Thread.sleep(2000);
         //Assert.assertEquals(lib.getCurrentUrl(), "");                    
     }
