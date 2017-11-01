@@ -24,7 +24,7 @@ public class TestRun {
 	
 	@Test(priority = 1, description="Performs an successful login and checks the dashboard url (passes)")
     public void login() throws InterruptedException, IOException {
-        lib.jsSendKeysForID("loginform-email", "loginform-email", "login", "ID");
+        lib.jsSendKeysForID("loginform-email1", "loginform-email1", "login", "ID");
         lib.jsSendKeysForID("loginform-password", "loginform-password", "login", "ID");
         Assert.assertTrue(lib.waitAndClickForID("login", "login", "name"));
         Thread.sleep(2000);
